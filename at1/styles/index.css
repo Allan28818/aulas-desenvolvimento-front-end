@@ -1,0 +1,175 @@
+@import "global.css";
+
+.section-title {
+  font-family: "Whisper", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--narenji-orange);
+  font-size: 2.5rem;
+}
+
+#header {
+  width: 100%;
+  height: auto;
+  padding: 25px 10px 10px 10px;
+  border-bottom: 1px solid var(--foreground-color);
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 200;
+  background: var(--background-color);
+
+  #header-logo {
+    width: 100px;
+    height: 100px;
+  }
+
+  #header-options {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+
+    .header-item {
+      width: 10%;
+      display: flex;
+      justify-content: center;
+      padding-bottom: 5px;
+      height: auto;
+      border-bottom: 1.5px solid transparent;
+      margin-bottom: 20px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .header-item:hover {
+      opacity: 0.7;
+      border-color: var(--chrome-yellow);
+    }
+
+    .header-item:hover .header-link {
+      color: var(--chrome-yellow);
+    }
+    .header-item .header-link {
+      text-decoration: none;
+      font-family: "Reem Kufi", sans-serif;
+      font-size: 1rem;
+      color: var(--text-color);
+    }
+  }
+}
+
+.page-section {
+  height: 100vh;
+  padding: 5px 20px;
+}
+
+#home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--background-color);
+  height: 100vh;
+  text-align: center;
+}
+
+.home-logo {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.home-title {
+  font-family: "Whisper", cursive;
+  color: var(--narenji-orange);
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.home-description {
+  font-family: "Reem Kufi", sans-serif;
+  color: var(--text-color);
+  font-size: 1.2rem;
+  max-width: 600px;
+  line-height: 1.5;
+}
+
+#contact {
+  .contact-subsections {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+
+    .contact-item-wrapper {
+      display: block;
+      background: var(--foreground-color);
+      border-radius: 10px;
+      padding: 10px;
+
+      height: auto;
+      min-height: 300px;
+      margin: 5px;
+      color: var(--text-color);
+      font-family: "Reem Kufi", sans-serif;
+    }
+
+    .contact-item-wrapper form .form-wrapper {
+      display: block;
+    }
+
+    .contact-item-wrapper form .form-input {
+      display: block;
+      height: auto;
+      padding: 5px 10px;
+      border-radius: 10px;
+      border: 2px solid var(--foreground-color);
+      font-family: "Reem Kufi", sans-serif;
+      resize: vertical;
+    }
+
+    .buttons-wrapper {
+      display: flex;
+      margin: auto;
+      align-self: center;
+      justify-content: center;
+      align-items: center;
+      margin-top: 5px;
+    }
+
+    .buttons-wrapper .button {
+      height: auto;
+      widht: auto;
+      padding: 5px 10px;
+      border-radius: 20px;
+      outline: none;
+      border: 2px solid transparent;
+      font-size: 0.75rem;
+      font-family: "Reem Kufi", sans-serif;
+      transition: all 0.3s ease;
+      cursor: pointer;
+    }
+
+    .buttons-wrapper .button:hover {
+      opacity: 0.7;
+    }
+
+    .buttons-wrapper #reset-contact {
+      color: var(--chrome-yellow);
+      background: transparent;
+      border: 2px solid var(--chrome-yellow);
+      margin-right: 10px;
+    }
+    .buttons-wrapper #send-contact {
+      color: var(--background-color);
+      background: var(--chrome-yellow);
+      border: 2px solid transparent;
+      margin-right: 10px;
+    }
+    .contact-item-wrapper form .form-input:focus {
+      border: 2px solid var(--chrome-yellow);
+      outline: none;
+    }
+  }
+}

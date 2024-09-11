@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convex</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+  </head>
+  <body>
+    <header id="header">
+      <img id="header-logo" src="./assets/logo.png" alt="Convex" />
+      <ul id="header-options">
+        <li class="header-item">
+          <a class="header-link" href="#home">Home</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#who-are-we">Quem somos?</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#products">Produtos</a>
+        </li>
+        <li class="header-item">
+          <a class="header-link" href="#contact">Contato</a>
+        </li>
+      </ul>
+    </header>
+    <section id="home" class="page-section">
+      <div class="home-content">
+        <img
+          src="./assets/merchandising.webp"
+          alt="Convex Logo"
+          class="home-logo" />
+        <h1 class="home-title">Bem-vindo à Convex</h1>
+        <p class="home-description">
+          Descubra as joias mais elegantes e sofisticadas do mercado.
+        </p>
+      </div>
+    </section>
+    <section id="who-are-we" class="page-section"></section>
+    <section id="products" class="page-section"></section>
+    <section id="contact" class="page-section">
+      <h1 class="section-title">Fale conosco</h1>
+      <div class="contact-subsections">
+        <div class="contact-item-wrapper">
+          <h3 class="subtitle">Se comunique por:</h3>
+          <ul class="contact-list">
+            <li class="contact-item">
+              <span>Telefone: 00 0000-0000</span>
+            </li>
+            <li>
+              <span>Email: email@email.com</span>
+            </li>
+            <li>
+              <span>Escritório: Rua 2 Cidade 1 País B</span>
+            </li>
+          </ul>
+        </div>
+        <div class="contact-item-wrapper">
+          <form action="/at1" method="POST">
+            <div class="form-wrapper">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                type="email"
+                class="form-input"
+                placeholder="email@example.com" />
+            </div>
+            <div class="form-wrapper">
+              <label for="message">Mensagem</label>
+              <textarea
+                class="form-input"
+                name="message"
+                id="message"
+                placeholder="Digite sua mensagem..."></textarea>
+              <div class="buttons-wrapper">
+                <button type="reset" class="button" id="reset-contact">
+                  Limpar
+                </button>
+                <button type="submit" class="button" id="send-contact">
+                  Enviar
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
